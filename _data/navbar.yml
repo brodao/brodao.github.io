@@ -1,0 +1,71 @@
+- id: "home"
+  title: "Principal"
+  href: "index.html"
+  icone: "house"
+
+- id: "install"
+  title: "Instalação"
+  href: "install.html"
+  icone: "tools"
+
+- id: "donation"
+  title: "Doações"
+  href: "donation.html"
+  icone: "heart"
+
+- id: "support"
+  title: "Suporte"
+  href: "support.html"
+  icone: "question-circle"
+
+- id: "more"
+  icone: "plus"
+  title: "Mais..."
+  items:
+    - title: AC Ferramentas
+
+    - id: "history"
+      title: "Histórico"
+      href: "history.html"
+      icone: "hourglass-split"
+
+    - id: "contact"
+      title: "Contato"
+      href: "contact.html"
+      icone: "envelope"
+
+    - title: "Fornecedores"
+      divider: true
+
+    - id: "ecipse"
+      title: "Eclipse"
+      href: "http://www.eclipse.org"
+      icone: "link-45deg"
+      external: true
+
+    - id: "totvs"
+      title: "TOTVS"
+      href: "http://www.totvs.com"
+      icone: "link-45deg"
+      external: true
+
+    - title: "Plataformas"
+      divider: true
+
+    - id: "eclipse"
+      title: "Eclipse"
+      href: "https://eclipse.org/downloads"
+      icone: "link-45deg"
+      external: true
+
+    - id: "tds"
+      title: "TOVS Developer Studio"
+      href: "https://ds.totvs.com"
+      icone: "link-45deg"
+      external: true
+
+    - id: "tds-vscode"
+      title: "TDS for VS-Code"
+      href: "https://github.com/totvs/tds-vscode"
+      icone: "link-45deg"
+      external: true

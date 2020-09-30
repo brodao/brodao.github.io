@@ -1,0 +1,9 @@
+<div class="well">
+
+    {% assign items = site.left_side | sort: 'sequence' %}
+    {% for item in items %}
+    <h3>{{ item.title }}<br><small>{{ item.subtitle }}</small></h3>
+    {{ item.content | markdownify }}
+    {% endfor %}
+
+</div>

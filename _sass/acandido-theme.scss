@@ -1,0 +1,116 @@
+@import "fonts";
+@import "rouge-github";
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Sticky footer styles
+  -------------------------------------------------- */
+body {
+	padding-bottom: 70px;
+}
+
+/* Custom page CSS
+  -------------------------------------------------- */
+/*
+box-shadow: none |h-shadow v-shadow blur spread color |inset
+|initial |inherit;
+*/
+.bottomShadow {
+	-moz-box-shadow: 0 8px 8px 0px #85afd4;
+	-webkit-box-shadow: 0 8px 8px 0px #85afd4;
+	box-shadow: 0 8px 8px 0px #85afd4;
+}
+
+.topShadow {
+	-moz-box-shadow: 0 -4px 4px 0px #85afd4;
+	-webkit-box-shadow: 0 -4px 0px 4px #85afd4;
+	box-shadow: 0 -4px 4px 0px #85afd4;
+}
+
+.navbar-static-top,
+.navbar-fixed-bottom {
+	min-height: 25px;
+	max-height: 30px;
+}
+
+.navbar-nav > li > a {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.page-header {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.page-header > h1,
+.page-header > h2 {
+	margin-bottom: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	line-height: 0.8;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a span.glyphicon {
+	margin-left: 3px;
+	font-size: 70%;
+	vertical-align: super;
+}
+
+nav.navbar-static-top a span.glyphicon {
+	margin-left: 0px;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+.credit {
+	margin: 3px 0;
+}
+
+#host {
+	margin-top: 60px;
+}
+
+#call {
+	margin-top: 60px;
+}
+
+#host img {
+	width: 90%;
+	height: 90%;
+}
+
+#navbar-icone {
+	width: 25px;
+	height: 25px;
+	margin-top: -12px;
+	//xpaddin-left: 10px;
+}
+
+td.detail > i.glyphicon-plus-sign,
+td.expanded > i.glyphicon-minus-sign {
+	cursor: pointer;
+}
+
+#map_container {
+	height: 430px;
+}
+
+#map_canvas {
+	height: 100%;
+}

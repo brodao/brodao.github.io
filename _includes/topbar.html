@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top bottomShadow">
+
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="navbar-nav">
+            {% for item in site.data.navbar %}
+            {% if item.items %}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbar-{{ item.id }}" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="fas fa-plus" aria-hidden="false"></span>
+                    &nbsp;{{ item.title }}<span class="caret"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbar-{{ item.id }}">
+                    {% for subitem in item.items %}
+                    {% if subitem.href %}
+                    <a class="dropdown-item" href="{{ subitem.href }}">
+                        <img src="{{ '/assets/bootstrap/icons' | | relative_url }}/{{ subitem.icone }}-fill.svg" alt=""
+                            width="16" height="16">
+                        &nbsp;{{ subitem.title }}
+                    </a>
+                    {% else %}
+                    {% if subitem.divider %}
+                    <div class="dropdown-divider"></div>
+                    {% endif %}
+                    <div class="dropdown-header">
+                        &nbsp;{{ subitem.title }}
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="{{ item.href }}">
+                    <img src="{{ '/assets/bootstrap/icons' | | relative_url }}/{{ item.icone }}-fill.svg" alt=""
+                        width="16" height="16">&nbsp;{{ item.title }}
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
+
+
+
+<!--
+<li>
+    <a href="{{ subitem.href }}" {% if subitem.target %}target="_blank" {% endif %} </a>
+        <span class="fas fa-{{subitem.icone}}" aria-hidden="false"></span>
+        {{ subitem.title }}
+    </a>
+</li>
+{ endfor }
+</ul>
+</li>
+{ endif } -->

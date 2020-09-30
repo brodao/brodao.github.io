@@ -1,3 +1,9 @@
-{"scripts": {
-    "server":  "bundle exec jekyll serve"
-}}
+{
+	"scripts": {
+		"clear": "rm -f _site",
+		"gem:update": "gem update",
+		"jekyll:build": "bundle exec jekyll build",
+		"jekyll:watcher": "npm run jekyll:build & bundle exec jekyll serve --watch"
+	},
+	"dependencies": {}
+}
